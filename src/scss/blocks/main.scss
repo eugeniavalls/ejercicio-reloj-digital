@@ -1,1 +1,76 @@
 /* ESTILOS DEL MAIN */
+
+.main {
+  border: 2px solid white;
+  width: 1000px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.digital-clock {
+  color: white;
+
+  &__hour {
+    font-size: 128px;
+  }
+
+  &__date {
+    font-size: 30px;
+  }
+}
+
+.clock {
+  position: relative;
+}
+
+.handles {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  margin: auto;
+}
+
+.line-seconds {
+  top: 55px;
+  position: absolute;
+  background-color: red;
+  width: 2px;
+  height: 100px;
+  transform: rotate(var(--second-rotation));
+  transform-origin: bottom;
+}
+
+.line-minutes {
+  top: 75px;
+  position: absolute;
+  background-color: white;
+  width: 4px;
+  height: 80px;
+  transform: rotate(var(--minute-rotation));
+  transform-origin: bottom;
+}
+
+.line-hours {
+  top: 95px;
+  position: absolute;
+  background-color: white;
+  width: 8px;
+  border-radius: 5px;
+  height: 60px;
+  transform: rotate(var(---rotation));
+  transform-origin: bottom;
+}
+
+.point {
+  position: absolute;
+  top: 147px;
+  left: 147px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(167, 167, 167);
+}

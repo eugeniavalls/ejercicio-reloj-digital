@@ -4,11 +4,40 @@
     <meta charset="UTF-8" />
     <!-- PON UN FAVICON!!! -->
     <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>Reloj mundial</title>
   </head>
   <body>
+    <main class="main">
+      <div class="digital-clock" id="digital-clock">
+        <span class="digital-clock__hour" id="hour">17</span>
+        <span class="digital-clock__hour">:</span>
+        <span class="digital-clock__hour" id="minute">00</span>
+        <div class="digital-clock__date" id="date">
+          <span id="day">Monday</span>
+          <span id="number-day">7</span>
+          <span id="month">February</span>
+          <span id="year">2022</span>
+        </div>
+      </div>
+
+      <div class="clock" id="clock">
+        <img src="./assets/images/reloj.svg" alt="reloj" />
+        <div class="handles" id="handles">
+          <div class="line-seconds" id="line-seconds"></div>
+          <div class="line-minutes" id="line-minutes"></div>
+          <div class="line-hours" id="line-hours"></div>
+        </div>
+        <div class="point" id="point"></div>
+      </div>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
